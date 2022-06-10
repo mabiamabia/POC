@@ -8,6 +8,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { VisualizacaoComponent } from './visualizacao/visualizacao.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,13 @@ import { VisualizacaoComponent } from './visualizacao/visualizacao.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
+  exports: [
+    LoginComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
