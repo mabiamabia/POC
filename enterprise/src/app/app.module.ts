@@ -9,6 +9,19 @@ import { ListagemComponent } from './listagem/listagem.component';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { VisualizacaoComponent } from './visualizacao/visualizacao.component';
 import { RouterModule } from '@angular/router';
+import { PasswordModule } from 'primeng/password';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+/* outros imports */
+import { ToolbarModule } from 'primeng/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { HttpClientModule } from '@angular/common/http';
+import { InputMaskModule } from 'primeng/inputmask';
+import {ButtonModule} from 'primeng/button';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +35,20 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    PasswordModule,
+    CardModule,
+    InputTextModule,
+    InputNumberModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ToolbarModule,
+    BrowserAnimationsModule,
+    InputTextareaModule,
+    HttpClientModule,
+    InputMaskModule,
+    ButtonModule
+
   ],
   providers: [],
   exports: [
