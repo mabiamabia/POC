@@ -21,6 +21,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { HttpClientModule } from '@angular/common/http';
 import { InputMaskModule } from 'primeng/inputmask';
 import {ButtonModule} from 'primeng/button';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import {ButtonModule} from 'primeng/button';
     CadastroComponent,
     ListagemComponent,
     EdicaoComponent,
-    VisualizacaoComponent
+    VisualizacaoComponent,
+    ListagemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import {ButtonModule} from 'primeng/button';
   ],
   providers: [],
   exports: [
-    LoginComponent
+    LoginComponent,
+    ListagemComponent
   ],
   bootstrap: [AppComponent]
 })
