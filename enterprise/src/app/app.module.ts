@@ -22,8 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { InputMaskModule } from 'primeng/inputmask';
 import {ButtonModule} from 'primeng/button';
 import { HeaderComponent } from './header/header.component';
-import {TableModule} from 'primeng/table';
-
 
 @NgModule({
   declarations: [
@@ -51,9 +49,7 @@ import {TableModule} from 'primeng/table';
     InputTextareaModule,
     HttpClientModule,
     InputMaskModule,
-    ButtonModule,
-    TableModule
-
+    ButtonModule
   ],
   providers: [],
   exports: [
